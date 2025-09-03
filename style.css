@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* nav bar section */
+
+nav {
+    background: #037865;
+    height: 10vh;
+    width: 100vw;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-family: "TASA Orbiter", sans-serif;
+    align-items: center;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.nav-item ul {
+    display: flex;
+    justify-content: space-between;  
+    gap: 20%;                
+    list-style: none;         
+}
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.text h1 {
+    color: white;
+    cursor: pointer;
+}
+.nav-item a:hover {
+    color: orange;
+}
+
+.bttn {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.bttn:hover {
+    color: white;
+    background-color: #193b3d;
+    border: 2px orange solid;
+}
+.hero {
+    height: 80vh;
+    width: 100vw;
+    background-color: #037865;
+}
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+    padding-top: 7%;           
+}
+
+img {
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  border: 5px orange solid;
+}
+
+.hero-content {
+    text-align: center;
+    padding-top: 2%;
+    font-family: "TASA Orbiter", sans-serif;
+    font-size: 32px;
+    color: #193b3d;
+}
+
+footer {
+    height: 10vh;
+    width: 100vw;
+    background-color: #037865;
+    text-align: center;
+    font-size: medium;
+    color: white;
+    padding-top: 3%;
+}
