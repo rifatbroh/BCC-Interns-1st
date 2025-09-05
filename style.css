@@ -4,9 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "TASA Orbiter", sans-serif;
 }
 
-/* -------------------- NAVBAR -------------------- */
 nav {
     background: #037865;
     height: 10vh;
@@ -16,7 +16,6 @@ nav {
 .header {
     display: flex;
     justify-content: space-between;
-    font-family: "TASA Orbiter", sans-serif;
     align-items: center;
     height: 100%;
     padding: 0 10%;
@@ -24,7 +23,7 @@ nav {
 
 .nav-item ul {
     display: flex;
-    gap: 40px; /* spacing between menu items */
+    gap: 40px;
     list-style: none;         
 }
 
@@ -58,7 +57,6 @@ a {
     border: 2px orange solid;
 }
 
-/* -------------------- HERO -------------------- */
 .hero {
     height: 90vh;
     width: 100%;
@@ -79,12 +77,11 @@ a {
 }
 
 .hero-content {
-    font-family: "TASA Orbiter", sans-serif;
     font-size: 32px;
     color: #193b3d;
 }
 
-/* -------------------- FOOTER -------------------- */
+
 footer {
     height: 10vh;
     width: 100%;
@@ -95,12 +92,11 @@ footer {
     padding-top: 3%;
 }
 
-/* -------------------- ABOUT SECTION -------------------- */
+
 .about {
     width: 100vw;
     text-align: center;
     padding: 50px 20px;
-    font-family: "TASA Orbiter", sans-serif;
 }
 
 .about h1 {
@@ -108,7 +104,6 @@ footer {
     margin-bottom: 20px;
 }
 
-/* Tabs wrapper */
 .about-tabs {
     display: flex;
     justify-content: center;  
@@ -117,12 +112,10 @@ footer {
 
 }
 
-/* Hide radio buttons */
 .about-tabs input[type="radio"] {
     display: none;
 }
 
-/* Tab buttons */
 .about-tabs label {
     padding: 10px;
     width: 100px;
@@ -135,7 +128,6 @@ footer {
     color: #037865;
     cursor: pointer;
     transition: 0.3s;
-    font-family: "TASA Orbiter", sans-serif;
 }
 
 .about-tabs label:hover {
@@ -143,13 +135,12 @@ footer {
     color: white;
 }
 
-/* Active tab */
+
 .about-tabs input[type="radio"]:checked + label {
     background: #193b3d;
     color: white;
 }
 
-/* Tab content */
 .tab-content {
     margin-top: 25px;
     width: 650px;
@@ -165,7 +156,6 @@ footer {
     border-radius: 10px;
     font-size: 18px;
     color: #193b3d;
-    font-family: "TASA Orbiter", sans-serif;
 }
 
 /* Show selected tab */
@@ -179,17 +169,11 @@ footer {
     height: 90vh;
 }
 
-footer p {
-    font-family: "TASA Orbiter", sans-serif;
-} 
-
-/* -------------------- Skill page -------------------- */
 
 .skill {
     height: 80vh;
 }
 .skill h2 {
-    font-family: "TASA Orbiter", sans-serif;
     font-size: 46px;
     text-align: center;
     padding-top: 30px;
@@ -199,7 +183,6 @@ footer p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
     width: 70%;
     max-width: 800px;
     padding: 20px;
@@ -210,7 +193,6 @@ footer p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 
@@ -219,7 +201,6 @@ footer p {
     flex-direction: column;
     align-items: center;
     margin: 15px;
-    transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
 }
 
@@ -227,26 +208,14 @@ footer p {
     height: 50px;
     width: 50px;
     margin-bottom: 10px;
-    transition: transform 0.3s;
 }
 
-
-.bx-1:hover img {
-    transform: scale(1.2);
-}
 
 .bx-1 p {
     font-size: 16px;
     font-weight: 600;
     color: #037865;
     margin: 0;
-}
-
-
-@media (max-width: 600px) {
-    .skill-box {
-        flex-direction: column;
-    }
 }
 
 
@@ -264,14 +233,14 @@ footer p {
     
 }
 
-/* Heading */
+
 .info h1 {
     font-size: 2em;
     margin-bottom: 30px;
     color: #037865;
 }
 
-/* Form Styling */
+
 form {
     display: flex;
     flex-direction: column;
@@ -285,13 +254,6 @@ form textarea {
     border-radius: 10px;
     font-size: 1em;
     width: 100%;
-    transition: all 0.3s ease;
-}
-
-form input:focus, 
-form textarea:focus {
-    border-color: #037865;
-    outline: none;
 }
 
 
@@ -303,7 +265,6 @@ form button {
     border-radius: 10px;
     font-size: 1em;
     cursor: pointer;
-    transition: background 0.3s ease;
 }
 
 form button:hover {
@@ -318,14 +279,3 @@ form button:hover {
     background-color: #f4f7f8;
     padding: 20px;
 } 
-
-/* Responsive */
-@media (max-width: 600px) {
-    .info {
-        padding: 30px 20px;
-    }
-
-    .info h1 {
-        font-size: 1.5em;
-    }
-}
